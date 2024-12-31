@@ -9,6 +9,12 @@ openai = "==1.58.1"
 langchain = "==0.3.13"
 langchain-openai = "==0.2.14"
 pydantic = "==2.10.4"
+langgraph = ">=0.0.31"
+colorama = "*"
+langchain-core = "<0.4.0,>=0.3.28"
+langchainhub = "==0.1.14"
+markdown = "==3.6"
+pdfkit = "==1.0.0"
 
 [dev-packages]
 

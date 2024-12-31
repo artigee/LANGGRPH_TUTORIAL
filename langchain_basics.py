@@ -10,17 +10,16 @@ french_german_prompt = ChatPromptTemplate.from_template(
     "Please tell me the french and german words for {word} with an example sentence for each."
 )
 
-## Example of a ChatPromptTemplate
-template = ChatPromptTemplate.from_messages([
-            ("system", "You are a helpful AI bot. Your name is {name}."),
-            ("human", "Hello, how are you doing?"),
-            ("ai", "I'm doing well, thanks!"),
-            ("human", "{user_input}"),
-        ])
+# template = ChatPromptTemplate.from_messages([
+#             ("system", "You are a helpful AI bot. Your name is {name}."),
+#             ("human", "Hello, how are you doing?"),
+#             ("ai", "I'm doing well, thanks!"),
+#             ("human", "{user_input}"),
+#         ])
 
-template = ChatPromptTemplate.from_messages([
-    ("human", "Please tell me the french and german words for {word} with an example sentence for each.")
-])
+# template = ChatPromptTemplate.from_messages([
+#     ("human", "Please tell me the french and german words for {word} with an example sentence for each.")
+# ])
 
 llm = ChatOpenAI(model="gpt-3.5-turbo")
 

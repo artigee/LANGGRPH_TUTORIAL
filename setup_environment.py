@@ -14,5 +14,7 @@ def setup_environment_variables(project_name: str = "") -> None:
     os.environ["LANGCHAIN_API_KEY"] = str(config("LANGCHAIN_API_KEY"))
     os.environ["LANGCHAIN_PROJECT"] = project_name
 
+    os.environ["TAVI_API_KEY"] = str(config("TAVI_API_KEY"))
+
     print("API Keys loaded and tracing set with project name:", project_name)
 
